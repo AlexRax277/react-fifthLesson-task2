@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.list-title, .list-news, .list-currency, .list-theme, .input {
+  list-style-type: none;
+  margin-left: 20%;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title, .currency, .theme {
+  display: inline-block;
+  margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.date-time {
+  position: absolute;
+  right: 20%;
+  top: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cur-name {
+  font-style: italic;
+}
+
+.cur-value {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.cur-shift {
+  opacity: 0.5;
+}
+
+.title, .theme {
+  color: blue;
+  cursor: pointer;
+}
+
+.list-theme {
+  margin-top: 30px;
+}
+
+.input {
+  border-right: none;
+  border-style: solid;
+  border-color: aquamarine;
+  outline: none;
+  width: 50%;
+}
+
+.btn {
+  background-color: aquamarine;
+  border-color: aquamarine;
+  border-left: none;
+}
+
+.pic {
+  background: url('./pic/nNSqlk2SQ1A.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 100%;
+  height: 10vh;
+}
+
+.list-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 20%;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: inline-block;
+  width: 240px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  background-color: lightgoldenrodyellow;
 }
